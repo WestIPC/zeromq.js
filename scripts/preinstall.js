@@ -4,8 +4,8 @@ var path = require("path");
 var fs = require("fs");
 
 var ARCH = process.arch;
-var ZMQ = "4.2.2";
-var ZMQ_REPO = "libzmq";
+var ZMQ = "2.2.0";
+var ZMQ_REPO = "zeromq2-x";
 
 if (process.env.npm_config_zmq_external == "true") {
   console.log("Requested to use external libzmq. Skipping libzmq build");

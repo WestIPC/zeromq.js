@@ -345,7 +345,9 @@ namespace zmq {
   }
 
   Socket::~Socket() {
+#if ZMQ_CAN_MONITOR
     Unmonitor();
+#endif
     Close();
   }
 
