@@ -37,7 +37,7 @@
         ['OS=="openbsd" or OS=="freebsd"', {
         }],
         ['OS=="linux"', {
-          'install_zmq': '<!(./build_libzmq.sh 2>&1 > zmq-build.log)',
+          'install_zmq': '<!(./build_libzmq.sh)',
           'libraries': [ '<(PRODUCT_DIR)/../../zmq/lib/libzmq.a' ],
           'include_dirs': [ '<(PRODUCT_DIR)/../../zmq/include' ],
         }],
