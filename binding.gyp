@@ -39,6 +39,7 @@
             ['OS=="linux"', {
               'libraries': ['<(PRODUCT_DIR)/../../zmq/lib/libzmq.a'],
               'include_dirs': ['<(PRODUCT_DIR)/../../zmq/include'],
+              'ldflags': ['-luuid'],
             }],
           ],
         }],
